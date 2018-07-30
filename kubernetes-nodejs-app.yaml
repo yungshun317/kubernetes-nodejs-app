@@ -1,7 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: kubernetes-nodejs-app
+  name: kubernetes-nodejs-app-v2
+  labels:
+    creation_method: manual
+    env: prod
 spec:
   containers:
   - image: yungshun317/nodejs
