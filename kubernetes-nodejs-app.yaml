@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kubernetes-nodejs-app
+spec:
+  containers:
+  - image: yungshun317/nodejs
+    name: nodejs
+    ports:
+    - containerPort: 8080
+      protocol: TCP
