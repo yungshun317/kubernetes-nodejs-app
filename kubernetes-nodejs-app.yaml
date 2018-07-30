@@ -1,11 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: kubernetes-nodejs-app-v2
+  name: kubernetes-nodejs-app-v3
   labels:
     creation_method: manual
     env: prod
 spec:
+  nodeSelector:
+    gpu: "true"
   containers:
   - image: yungshun317/nodejs
     name: nodejs
